@@ -1,0 +1,114 @@
+/* SELECTORES id, clase, etiqueta o tag*/
+/* selector de id comienza con #*/
+
+
+/* selector de clase . y el nombre de la clase
+.div {
+    background-color: #070707;
+    color: white;
+    padding: 5%;
+    margin: 5%;
+    height: 450px;
+    width: 300px;
+    display: inline-block;
+}*/
+
+#title {
+    text-align: center;
+    color: grey;
+    font-size: 40px;
+}
+
+#tarjetas {
+    display: inline-block;
+    max-width: 65%;
+    margin-left: 18%;
+}
+
+
+#tarjetas .child {
+    float: left;
+    width: 33%;
+    align-items: center;
+    text-align: center;
+}
+
+#tarjetas .child img {
+    width: 270px;
+    height: 160px;
+    background-size: cover;
+
+}
+
+
+
+#title #subtitle {
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+hr {
+    width: 16%;
+}
+
+#header {
+    color: gray;
+    background-image: url("../img/fondo.jpg");
+    background-repeat: repeat-x;
+    background-size: 33.3%;
+
+}
+
+footer {
+    background-color: black;
+    width: 100%;
+    height: 100px;
+
+    padding: 2.5%;
+    text-align: center;
+    color: white;
+    background-image: url("../img/fondo.jpg");
+    background-size: 40%;
+    background-position-x: center;
+    background-position-y: top;
+    background-repeat: no-repeat;
+}
+
+.centrado {
+    text-align: center;
+}
+
+footer p {
+    padding-top: 2%;
+}
+
+.contenedor_form {
+    background-color: #070707;
+    color: white;
+    margin-left: 40%;
+    margin-right: 36%;
+    text-align: center;
+
+}
+
+#reservas {
+    margin: 10%;
+
+}
+
+
+ul#menu {
+    display: flex;
+    align-items: center;
+
+    height: 30px;
+    line-height: 80px;
+}
+
+li {
+    list-style-type: none;
+    padding: 30px;
+    color: gray;
+}

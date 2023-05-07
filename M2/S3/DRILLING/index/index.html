@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIMRODEL Restaurant y Pub</title>
+    <link rel="icon" type="image/x-icon" href="MATERIAL COMPLEMENTARIO\n.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha384- UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets\css\style.css">
+</head>
+
+<body>
+    <section id="header">
+
+        <img src="../index/assets/img/n.png" alt="Logo" width="200">
+        <p>
+        <ul id="menu">
+            <li>Nuestros productos.</li>
+            <li>Sobre nosotros.</li>
+            <li>Comuniquémonos.</li>
+            <li>>Reservas.</li>
+        </ul>
+        </p>
+    </section>
+
+
+    <section id="title">
+        <h1>Nimrodel Pub Restaurant</h1>
+        <div id="subtitle">
+            <hr>
+            Destacados de la semana<br><br>
+        </div>
+    </section>
+
+
+    <section id="tarjetas">
+        <!-- Tarjeta 1 -->
+        <div class="child">
+
+            <img src=" ../index/assets/img/bebidas.jpg" alt="Gaseosas" width="200"><br>
+            <h3 align="center">GASEOSAS</h3>
+            <p align="center">Tenemos bebidas de todos los sabores, incluso light y cero azúcar.</p><br>
+        </div>
+        <!-- Tarjeta2 -->
+        <div class="child"><img src="../index/assets/img/tablas.jpg" alt="Tablas" width="200"><br>
+            <h3 align="center">TABLAS</h3>
+            <p align="center">Exquisítas tablas de picoteo, con diversas variedades de jamones y quesos, listas para
+                compartir y
+                disfrutar
+                en
+                compañia.</p>
+        </div>
+        <!-- Tarjeta 3 -->
+        <div class="child"> <img src="../index/assets/img/shop.jpeg" alt="Cerveza" width="200"><br>
+
+            <h3 align="center">SHOP CERVEZA</h3>
+            <p align="center">Schop, Stella Artois, Corona, Cusquequeña, Moritz sin alcohol.</p>
+
+        </div>
+    </section>
+
+    <div class="centrado">
+        <div class="contenedor_form">
+            <h2>Comuniquémonos:</h2>
+            <form action="" method="post" id="contacto">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="María Vargas" required
+                    pattern="^[a-zA-Z\s]+$"><br><br>
+
+                <label for="correo">Correo:</label>
+                <input type="text" id="correo" name="correo" placeholder="mariavargas@correo.com" required pattern="^[^@]+@[^@]+\.[a-
+            zA-Z]{2,}$"><br><br>
+
+                <label for="fono">Teléfono:</label>
+                <input type="text" id="fono" name="fono" placeholder="951236874" required pattern="^[0-9]{9}$" size="9"
+                    maxlength="9"><br><br>
+
+                <label for="motivo">Motivo:</label>
+
+                <input type="text" list="motivos">
+                <datalist id="motivos">
+                    <option value="Felicitaciones"></option>
+                    <option value="Reclamos"></option>
+                    <option value="Consultas"></option>
+                    <option value="Sugerencias"></option>
+                </datalist>
+                <br><br>
+
+
+                <textarea name="su" id="" cols="30" rows="10"></textarea><br><br>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </div>
+    <br><br>
+
+    <div class="centrado">
+
+        <div class="contenedor_form">
+
+            <h2>Reservas:</h2>
+            <form action="" method="post" id="reservas">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="xxx xxxx" required
+                    pattern="^[a-zA-Z\s]+$"><br><br>
+
+                <label for="correo">Correo:</label>
+                <input type="text" id="correo" name="correo" placeholder="xxx@xxx.xx" required pattern="^[^@]+@[^@]+\.[a-
+        zA-Z]{2,}$"><br><br>
+
+                <label for="fono">Teléfono:</label>
+                <input type="text" id="fono" name="fono" placeholder="xxxxxxxxx" required pattern="^[0-9]{9}$" size="9"
+                    maxlength="9"><br><br>
+
+                <label for="fecha">Fecha:</label>
+                <input type="date" id="fecha" name="fecha"><br><br>
+
+                <label for="horario">Hora:</label>
+                <input type="time" id="horario" name="horario"><br><br>
+
+                <label for="asistentes">Cantidad de asistentes:</label>
+                <input type="text" id="asistentes" name="asistentes"><br><br>
+
+                <input type="submit" value="Reservar">
+
+            </form>
+        </div>
+    </div><br>
+
+    <footer>
+
+        <p>Todos los derechos reservados <i class="fa-solid fa-registered"></i></p>
+
+    </footer>
+
+</body>
+
+</html>

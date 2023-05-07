@@ -1,0 +1,259 @@
+/* SELECTORES id, clase, etiqueta o tag*/
+/* selector de id comienza con #*/
+
+
+/* selector de clase . y el nombre de la clase
+.div {
+    background-color: #070707;
+    color: white;
+    padding: 5%;
+    margin: 5%;
+    height: 450px;
+    width: 300px;
+    display: inline-block;
+}*/
+
+#title {
+    text-align: center;
+    color: grey;
+    font-size: 40px;
+}
+
+#tarjetas {
+    display: inline-block;
+    max-width: 65%;
+    margin-left: 30%;
+}
+
+
+#tarjetas .child {
+    float: left;
+    width: 33%;
+    align-items: center;
+    text-align: center;
+}
+
+#tarjetas .child img {
+    width: 270px;
+    height: 160px;
+    background-size: cover;
+
+}
+
+#title #subtitle {
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+hr {
+    width: 16%;
+}
+
+#header {
+    color: gray;
+    background-image: url("../img/fondo.jpg");
+    background-repeat: repeat-x;
+    background-size: 33.3%;
+
+}
+
+footer {
+    background-color: black;
+    width: 100%;
+    height: 100px;
+
+    padding: 2.5%;
+    text-align: center;
+    color: white;
+    background-image: url("../img/fondo.jpg");
+    background-size: 40%;
+    background-position-x: center;
+    background-position-y: top;
+    background-repeat: no-repeat;
+}
+
+.centrado {
+    text-align: center;
+}
+
+footer p {
+    padding-top: 2%;
+}
+
+.contenedor_form {
+    background-color: #070707;
+    color: white;
+    margin-left: 40%;
+    margin-right: 36%;
+    text-align: center;
+
+}
+
+#reservas {
+    margin: 10%;
+
+}
+
+
+ul#menu {
+    display: flex;
+    align-items: center;
+
+    height: 30px;
+    line-height: 80px;
+}
+
+li {
+    list-style-type: none;
+    padding: 30px;
+    color: gray;
+}
+
+
+/* Pantalla LARGE, entre 992 px y 1199 px */
+@media(min-width:992px) and (max-width:1199px) {
+
+    .input {
+        float: left;
+    }
+
+    .contenedor_form {
+        background-color: #404040;
+        display: block;
+        margin-left: 25%;
+        margin-right: 10%;
+    }
+
+    #tarjetas {
+        margin-left: 20%;
+    }
+
+    #tarjetas.shop_img {
+        width: 900px;
+        height: 160px;
+    }
+
+    #tarjetas .child {
+
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        display: block;
+    }
+
+    #tarjetas .child img {
+        width: 100%;
+        height: 160px;
+        background-size: cover;
+
+    }
+
+    #header {
+        background-image: url("../img/fondo.jpg");
+        background-repeat: repeat-x;
+        background-size: 50%;
+    }
+
+    li {
+        list-style-type: none;
+        color: gray;
+    }
+
+    .centrado {
+
+        margin-left: 20px;
+        text-align: center;
+        display: block;
+        width: 900px;
+    }
+
+    .footer {
+        background-image: url("../img/fondo.jpg");
+        background-size: 600px;
+        background-position-x: right;
+        background-position-y: top;
+        background-repeat: no-repeat;
+    }
+}
+
+
+
+/* Pantalla MEDIUM, entre 768 px y 991 px */
+@media(min-width:768px) and (max-width:991px) {
+
+    #header {
+        background-image: url("../img/fondo.jpg");
+        background-repeat: repeat-x;
+        background-size: 50%;
+        display: block;
+    }
+
+    li {
+        list-style-type: none;
+        color: gray;
+    }
+
+
+    #title {
+        text-align: center;
+        color: grey;
+        font-size: 60px;
+    }
+
+    #tarjetas .child {
+
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    #tarjetas .child img {
+        width: 500px;
+        height: 160px;
+        background-size: cover;
+
+    }
+
+    .centrado {
+        display: none;
+    }
+}
+
+
+/* Pantalla SMALL, hasta 767 px */
+@media(min-width:0px) and (max-width:767px) {
+
+    #header {
+        background-color: black;
+        background-image: url("../img/fondo.jpg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        display: block;
+    }
+
+    #title {
+        text-align: center;
+        color: grey;
+        font-size: 60px;
+    }
+
+    .centrado {
+        display: none;
+    }
+
+    #tarjetas {
+        display: inline-block;
+        max-width: 50%;
+        margin-left: 18%;
+    }
+
+    #tarjetas .child img {
+        display: inline-flex;
+        width: 600px;
+        height: 200px;
+        background-size: cover;
+
+    }
+}
